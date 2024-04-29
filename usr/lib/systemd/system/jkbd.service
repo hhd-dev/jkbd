@@ -1,0 +1,10 @@
+[Unit]
+Description=JKBD Service. Makes normal gamepads have a CLI lizard mode.
+
+[Service]
+ExecStart=/usr/bin/jkbd
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
