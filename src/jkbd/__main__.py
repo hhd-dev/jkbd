@@ -14,9 +14,12 @@ def main():
             try:
                 controller_loop()
             except Exception as e:
+                # from rich import get_console
+
                 logger.error(
-                    f"Received error (likely controller disconencted), waiting 1s:\n{e}"
+                    f"Received error (likely controller disconencted), waiting 1s. Error:{e}"
                 )
+                # get_console().print_exception()
                 time.sleep(1)
     except KeyboardInterrupt:
         pass
