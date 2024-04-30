@@ -25,3 +25,19 @@ This script will ignore Valve controllers.
 | Right Stick   | Mouse       |
 | Left Trigger  | Right Click |
 | Right Trigger | Left Click  |
+
+## Installation
+Install from [AUR](https://aur.archlinux.org/packages/jkbd) or find the `PKGBUILD`
+in [PKGBUILD](./pkg/PKGBUILD).
+```bash
+yay -S jkbd
+```
+Fedora coming soon.
+
+Then enable with:
+```
+sudo systemctl start jkbd
+```
+
+You can also run with the command `jkbd` for testing, provided your user has uinput access
+(add `sudo` if not).
